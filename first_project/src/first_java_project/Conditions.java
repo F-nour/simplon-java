@@ -1,6 +1,6 @@
 package first_java_project;
 
-public class Exercice {
+public class Conditions {
 
 	public static void typage () {
 		int annee = -3000;
@@ -93,15 +93,6 @@ public class Exercice {
 		}
 		System.out.println("Nous sommes " + day + ".\n");
 		
-	}
-	
-	public static void addition (int a, int b) {
-		int sum = a + b;
-		System.out.println("La somme de " + a + " et " + b + " est de " + sum + "\n");
-	}
-	
-	public static void name (String name) {
-		System.out.println("hello world " + name + "\n\n");
 	}
 	
 	public static void moduloOne() {
