@@ -1,4 +1,4 @@
-package first_java_project.beginer;
+package firstJavaProject.beginer;
 
 public enum Couleur {
 		JAUNE,

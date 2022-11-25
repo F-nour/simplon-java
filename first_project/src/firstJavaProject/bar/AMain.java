@@ -1,4 +1,4 @@
-package first_java_project.bar;
+package firstJavaProject.bar;
 
 import javax.swing.JOptionPane;
 

@@ -1,4 +1,4 @@
-package first_java_project.poo;
+package firstJavaProject.poo;
 
 public class Poo {
 

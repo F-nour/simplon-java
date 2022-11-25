@@ -1,4 +1,4 @@
-package first_java_project.fournitures;
+package firstJavaProject.fournitures;
 
 import java.awt.Color;
 

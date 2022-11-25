@@ -1,7 +1,8 @@
-package first_java_project.bar;
+package firstJavaProject.bar;
 
 public class Client {
 	
+	public String valeurFacture;
 	public String nom;
 	public Cafe commandeCafe;
 	public Tasse tasse;
@@ -27,6 +28,4 @@ public class Client {
 		this.nom = "Jean";
 		this.tasse = new Tasse();
 	}
-	
-	
 }

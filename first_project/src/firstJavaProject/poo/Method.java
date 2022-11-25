@@ -1,8 +1,8 @@
-package first_java_project.poo;
-
-import first_java_project.beginer.Algos; 
+package firstJavaProject.poo;
 
 import java.util.Random;
+
+import firstJavaProject.beginer.Algos;
 
 public class Method {
 
