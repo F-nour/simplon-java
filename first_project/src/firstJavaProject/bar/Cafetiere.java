@@ -13,9 +13,15 @@ public class Cafetiere {
 		tasseAvecValeurs.cafe = new Cafe(bourbon, d);
 	}
 	
-	
-	
-	
-
-	
+	public void remplir(Tasse tasse, TypeCafe typeCafe, double quantite) { 
+		if (tasse.cafe != null) {
+			tasse.cafe.quantiteLiquideMl += quantite; 
+			tasse.cafe.typeCafe = TypeCafe.BATARD; 
+		}
+		tasse.cafe = new Cafe(typeCafe, quantite);
+		if (quantite > tasse.quantiteCafeMax) {
+			System.out.println("Le café a débordé !!!");
+			tasse.cafe.quantiteLiquideMl = tasse.quantiteCafeMax;
+		}
+	}
 }

@@ -2,17 +2,16 @@ package firstJavaProject.bar;
 
 public class Client {
 	
-	public String valeurFacture;
-	public String nom;
-	public Cafe commandeCafe;
-	public Tasse tasse;
-	public double facture;
+	double valeurFacture;
+	String nom;
+	Cafe commandeCafe;
+	Tasse tasse;
 	
-	public Client(String nom, Cafe commandeCafe, boolean commande) {
+	public Client(String nom, Cafe commandeCafe, boolean avecTasse) {
 		this.commandeCafe = commandeCafe;
 		this.nom = nom;
-		if (commande) {
-			new Tasse();
+		if (avecTasse) {
+			this.tasse = new Tasse();
 		}
 	}
 

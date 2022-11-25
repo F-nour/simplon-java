@@ -2,8 +2,8 @@ package firstJavaProject.bar;
 
 public class Cafe {
 	
-	public TypeCafe typeCafe;
-	public double quantiteLiquideMl;
+	TypeCafe typeCafe;
+	double quantiteLiquideMl;
 	
 	public Cafe(TypeCafe typeCafe, double quantiteLiquideMl) {
 		this.typeCafe = typeCafe;

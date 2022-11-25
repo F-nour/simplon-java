@@ -23,4 +23,16 @@ public class Tasse {
 		cafe.quantiteLiquideMl = cafe.quantiteLiquideMl = 0;
 		return cafe.quantiteLiquideMl;
 	}
+	
+	public int prix() {
+		int cout;
+		if (this.quantiteCafeMax <= 100) {
+			cout = 2;
+		} else if (this.quantiteCafeMax > 500) {
+			cout = 0;
+		} else {
+			cout = 3;
+		}
+		return cout;
+	}
 }

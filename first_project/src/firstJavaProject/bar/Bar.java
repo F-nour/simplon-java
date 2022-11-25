@@ -65,7 +65,7 @@ public class Bar {
 				+ "\n\nC'est réussi ? ") ;
 		
 		
-		Client devientBatard = new Client("Batard_STasse",new Cafe(TypeCafe.JAVA, 100), new Tasse(200)) ; 
+		Client devientBatard = new Client("Batard_STasse",new Cafe(TypeCafe.JAVA, 100), new Tasse(200))	 ; 
 		devientBatard.tasse.cafe = new Cafe() ; 
 		restoMesClientsBasic.servir(devientBatard) ; 
 		
@@ -76,7 +76,7 @@ public class Bar {
 		if(checkBasics == 0 && checkEtranges == 0 && checkInacceptables == 0 && checkBatard == 0)
 			JOptionPane.showMessageDialog(null, "Bravo tu as réussi cet exo ! Toujours plus simple non ?");
 		else 
-			JOptionPane.showMessageDialog(null, "Quelque chose ne fonctionne pas :/ Dommage ! N'hésite pas à demander si tu as besoin d'aide ! ");
+			JOptionPane.showMessageDialog(null, "Quelque cose ne fonctionne pas :/ Dommage ! N'hésite pas à demander si tu as besoin d'aide ! ");
 		
 	}
 	
