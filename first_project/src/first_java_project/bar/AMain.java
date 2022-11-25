@@ -2,6 +2,7 @@ package first_java_project.bar;
 
 import javax.swing.JOptionPane;
 
+
 public class AMain {
 
 	public static void main(String args[])
@@ -54,7 +55,7 @@ public class AMain {
 				+ "Ma tasse contient " + tasseBut.cafe.quantiteLiquideMl + " ml de café " + tasseBut.cafe.typeCafe + "\n\n"
 				
 				+ "C'est réussi ? "
-				) ; 	
+				) ; 
 			
 		try {
 			tasseVide.boire();

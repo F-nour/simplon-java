@@ -14,7 +14,6 @@ public class Tasse {
 		this.quantiteCafeMax = 100;
 	}
 
-
 	public double boire(double quantiteBut) {
 		cafe.quantiteLiquideMl = cafe.quantiteLiquideMl - quantiteBut;
 		return cafe.quantiteLiquideMl;
@@ -24,6 +23,4 @@ public class Tasse {
 		cafe.quantiteLiquideMl = cafe.quantiteLiquideMl = 0;
 		return cafe.quantiteLiquideMl;
 	}
-	
-	
 }
