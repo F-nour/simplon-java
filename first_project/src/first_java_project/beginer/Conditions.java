@@ -1,4 +1,4 @@
-package first_java_project;
+package first_java_project.beginer;
 
 public class Conditions {
 
