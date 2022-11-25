@@ -6,7 +6,8 @@ public enum TypeCafe {
 	MOKA(0.025),
 	TYPICA(0.027),
 	BOURBON(0.030),
-	BATARD(0.00);
+	BATARD(0),
+	;
 	
 	double coutParMl;
 

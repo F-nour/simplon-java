@@ -14,14 +14,17 @@ public class Cafetiere {
 	}
 	
 	public void remplir(Tasse tasse, TypeCafe typeCafe, double quantite) { 
-		if (tasse.cafe != null) {
-			tasse.cafe.quantiteLiquideMl += quantite; 
-			tasse.cafe.typeCafe = TypeCafe.BATARD; 
+		if(tasse.cafe != null)
+		{
+			tasse.cafe.quantiteLiquideMl += quantite ; 
+			if(typeCafe != tasse.cafe.typeCafe) tasse.cafe.typeCafe = TypeCafe.BATARD ; 
 		}
-		tasse.cafe = new Cafe(typeCafe, quantite);
-		if (quantite > tasse.quantiteCafeMax) {
-			System.out.println("Le café a débordé !!!");
-			tasse.cafe.quantiteLiquideMl = tasse.quantiteCafeMax;
+		else tasse.cafe = new Cafe(typeCafe, quantite) ; 
+		
+		if(tasse.cafe.quantiteLiquideMl > tasse.quantiteCafeMax)
+		{
+			System.out.println("Mon cafe déborde !");
+			tasse.cafe.quantiteLiquideMl = tasse.quantiteCafeMax ; 
 		}
 	}
 }

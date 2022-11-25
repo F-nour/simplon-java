@@ -11,7 +11,7 @@ public class Cafe {
 	}
 	
 	public Cafe () {
-		this.typeCafe = this.typeCafe.MOKA;
+		this.typeCafe = TypeCafe.MOKA;
 		this.quantiteLiquideMl = 100; 
 	}
 	
