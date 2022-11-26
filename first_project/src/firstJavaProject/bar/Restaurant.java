@@ -1,12 +1,29 @@
 package firstJavaProject.bar;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Restaurant {
 	
+	String nom;
 	Cafetiere cafetiere;
 	double profit;
+	ArrayList<Client> listeClientServi;
 	
-	public Restaurant() {
+	
+	
+	
+	public Restaurant(String nom) {
+		this.nom = nom;
 		this.cafetiere = new Cafetiere();
+		this.listeClientServi = new ArrayList<Client>();
+	}
+
+	public Restaurant() {
+		this.nom = "Le Restaurant";
+		this.cafetiere = new Cafetiere();
+		this.listeClientServi = new ArrayList<Client>();
+
 	}
 
 	public double servir(Client client) {

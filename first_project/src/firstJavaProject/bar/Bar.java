@@ -13,6 +13,7 @@ public class Bar {
 		Restaurant resto = new Restaurant(); 
 		
 		ArrayList<Client> mesClientsBasic = new ArrayList<Client>(
+				
 			Arrays.asList(
 				new Client("Moka_100", new Cafe(), true),
 				new Client("Java_100", new Cafe(TypeCafe.JAVA, 100), true),
