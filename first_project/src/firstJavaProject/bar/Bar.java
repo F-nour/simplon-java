@@ -35,7 +35,7 @@ public class Bar {
 				new Client("Moka_2000", new Cafe(TypeCafe.MOKA,2000), new Tasse(2000)),
 				new Client("Moka_2000", new Cafe(TypeCafe.MOKA,2000), new Tasse(1000))
 			)
-		); 
+		);
 		
 		Restaurant restoMesClientsEtrange = checkFactureTotal(mesClientsEtrange); 
 		System.out.println(restoMesClientsEtrange.profit);

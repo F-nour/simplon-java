@@ -43,7 +43,7 @@ public class Restaurant {
 		return client.valeurFacture;
 	}
 	
-	public void getTasse(Client client) {
+	private void getTasse(Client client) {
 		if (client.tasse == null) {
 			if (client.commandeCafe.quantiteLiquideMl > 100) {
 				client.tasse = new Tasse(500);
@@ -56,7 +56,7 @@ public class Restaurant {
 		}
 	}
 	
-	public double facture(Client client) {
+	private double facture(Client client) {
 		double facture =  client.commandeCafe.typeCafe.coutParMl * client.commandeCafe.quantiteLiquideMl;
 		if (getOut(client)) {
 			facture = 0; 
@@ -65,7 +65,7 @@ public class Restaurant {
 		return facture;
 	}
 	
-	public boolean getOut(Client client) {
+	private boolean getOut(Client client) {
 		if (client.commandeCafe == null || client.commandeCafe.typeCafe == TypeCafe.BATARD) {
 			System.out.println("Hors de mon resto !!");
 			return true;

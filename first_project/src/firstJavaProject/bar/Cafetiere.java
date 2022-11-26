@@ -21,10 +21,17 @@ public class Cafetiere {
 		}
 		else tasse.cafe = new Cafe(typeCafe, quantite) ; 
 		
+		deborde(tasse);
+
+	}
+	
+	private boolean deborde(Tasse tasse) {
 		if(tasse.cafe.quantiteLiquideMl > tasse.quantiteCafeMax)
 		{
 			System.out.println("Mon cafe déborde !");
 			tasse.cafe.quantiteLiquideMl = tasse.quantiteCafeMax ; 
+			return true;
 		}
+		return false;
 	}
 }
