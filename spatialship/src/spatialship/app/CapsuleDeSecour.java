@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class CapsuleDeSecour {
 
-	ArrayList<Creature> passagers;
+	ArrayList<Creature> passager;
 	int nbMaximumPassager;
 	boolean isInSpace;
 
 	public CapsuleDeSecour() {
-		this.passagers = new ArrayList<Creature>();
+		this.passager = new ArrayList<Creature>();
 		this.nbMaximumPassager = 3;
 		this.isInSpace = false;
 	}
 
 	public boolean ajouterPassager(Creature creature) {
 		boolean isInSpaceship = false;
-		if (this.passagers.size() < this.nbMaximumPassager) {
-			this.passagers.add(creature);
+		if (this.passager.size() < this.nbMaximumPassager) {
+			this.passager.add(creature);
 			isInSpaceship = true;
 		}
 		return isInSpaceship;
@@ -25,7 +25,7 @@ public class CapsuleDeSecour {
 	
 	public ArrayList<Creature> lanceCapsule() {
 		this.isInSpace = true;
-		return this.passagers;
+		return this.passager;
 	}
 
 }
