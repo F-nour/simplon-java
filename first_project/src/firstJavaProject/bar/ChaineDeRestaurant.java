@@ -41,7 +41,7 @@ public class ChaineDeRestaurant {
 			if (client.valeurFacture == 0) {
 				clientsExpulses.add(client);
 			} else {
-				clientsServis.add(client);
+				restaurant.listeClientServi.add(client);
 			}
 		}
 						
@@ -51,12 +51,11 @@ public class ChaineDeRestaurant {
 				+ "C'est réussi ?");
 		
 		if (confirm == 0) {
-			JOptionPane.showMessageDialog(null, "Il y a eu " + clientsServis.size() + " clients servis.\n"
-				+ "En revanche, " + clientsExpulses.size() + " clients ont été expulsés. \n" 
+			JOptionPane.showMessageDialog(null, clientsExpulses.size() + " clients ont été expulsés. \n" 
 				+ "\n"
-				+ "Le restaurant " + restaurants.get(0).nom + " a fait " + restaurants.get(0).profit + " euros de profit. \n"
-				+ "Le restaurant " + restaurants.get(1).nom + " a fait " + restaurants.get(1).profit + " euros de profit. \n"
-				+ "Le restaurant " + restaurants.get(2).nom + " a fait " + restaurants.get(2).profit + " euros de profit. \n"
+				+ "Le restaurant " + restaurants.get(0).nom + " a fait " + restaurants.get(0).profit + " euros de profit avec " + restaurants.get(0).listeClientServi.size() + " clients servis. \n"
+				+ "Le restaurant " + restaurants.get(1).nom + " a fait " + restaurants.get(1).profit + " euros de profit avec " + restaurants.get(1).listeClientServi.size() + " clients servis.  \n"
+				+ "Le restaurant " + restaurants.get(2).nom + " a fait " + restaurants.get(2).profit + " euros de profit avec " + restaurants.get(2).listeClientServi.size() + " clients servis.  \n"
 				);
 		} else {
 			JOptionPane.showMessageDialog(null, "Votre application a rencontré un problème. Merci de corriger ceci.");
