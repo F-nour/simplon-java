@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 /**
  * @author fatto
  *
  */
-module spatialship {
+module POO {
 	requires java.desktop;
 }
