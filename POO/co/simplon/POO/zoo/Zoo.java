@@ -10,11 +10,11 @@ public class Zoo {
 
 	public void createZoo() {
 		
-		ArrayList<Vertebre> vertebre = new ArrayList<Vertebre>();
+		List<Vertebre> vertebre = new ArrayList<Vertebre>();
 		
-		ArrayList<Mammifere> mammifere = new ArrayList<Mammifere>();
+		List<Mammifere> mammifere = new ArrayList<Mammifere>();
 
-		ArrayList<Felin> felin = new ArrayList<Felin>();
+		List<Felin> felin = new ArrayList<Felin>();
 
 		List<Chat> chat = Arrays.asList(
 				new ChatDomestique(), new MainCoon(), new Persan()
@@ -25,9 +25,9 @@ public class Zoo {
 		);
 
 		
-		ArrayList<Canin> canin = new ArrayList<Canin>();
+		List<Canin> canin = new ArrayList<Canin>();
 
-		ArrayList<Chien> chien = new ArrayList<Chien>();
+		List<Chien> chien = new ArrayList<Chien>();
 
 		List<Cocker> cocker = Arrays.asList(
 				new SpanielAmericain(), new SpanielAnglais()
@@ -37,7 +37,7 @@ public class Zoo {
 		);
 		
 
-		ArrayList<Invertebre> invertebre = new ArrayList<Invertebre>();
+		List<Invertebre> invertebre = new ArrayList<Invertebre>();
 		List<Serpent> serpent = Arrays.asList(
 				new Boa(), new Cobra()
 		);
