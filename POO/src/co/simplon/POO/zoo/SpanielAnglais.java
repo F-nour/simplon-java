@@ -1,5 +1,5 @@
 package co.simplon.POO.zoo;
 
-public abstract class SpanielAnglais extends Cocker {
+public  class SpanielAnglais extends Cocker {
 
 }

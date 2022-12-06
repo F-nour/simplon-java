@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author fatto
- *
- */
-module POO {
-}

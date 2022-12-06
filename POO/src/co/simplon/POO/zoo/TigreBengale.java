@@ -1,5 +1,5 @@
 package co.simplon.POO.zoo;
 
-public abstract class TigreBengale extends Tigre {
+public class TigreBengale extends Tigre {
 
 }
