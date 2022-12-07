@@ -8,7 +8,7 @@ public enum Race {
 	KLINGON(12),
 	EPSILON(24),
 	BORON(48),
-	FATTOUMNOUREDDINE(96),
+	FATTOUM_NOUREDDINE(96),
 	;
 	
 	int ageAdulte;
